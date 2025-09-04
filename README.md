@@ -1,3 +1,4 @@
+# QuickText
 A web development framework using only plain HTML/CSS meant for beginners and advanced users to more easily create fully accessible sites without compromising on accessibility
 
 The name QuickText is a play on the first two letters in HTTP (HyperText). QuickText is a fast and simple system of templates for making simple, responsive, beautiful, and ACCESSIBLE websites with only plain HTML/CSS.
