@@ -1,0 +1,209 @@
+/*****************************************************************************/
+/*                                                                           */
+/*                               BASIC COLOURS                               */
+/*                                                                           */
+/*****************************************************************************/
+
+/* NEAR BLACK */
+@property --black {syntax:"<color>";inherits:false;initial-value:rgb(5 5 5 / 100%);}
+@property --black90 {syntax:"<color>";inherits:false;initial-value:rgb(5 5 5 / 90%);}
+@property --black75 {syntax:"<color>";inherits:false;initial-value:rgb(5 5 5 / 75%);}
+@property --black50 {syntax:"<color>";inherits:false;initial-value:rgb(5 5 5 / 50%);}
+@property --black25 {syntax:"<color>";inherits:false;initial-value:rgb(5 5 5 / 25%);}
+@property --black10 {syntax:"<color>";inherits:false;initial-value:rgb(5 5 5 / 10%);}
+
+/* NEAR WHITE */
+@property --white {syntax:"<color>";inherits:false;initial-value:rgb(250 250 250 / 100%);}
+@property --white90 {syntax:"<color>";inherits:false;initial-value:rgb(250 250 250 / 90%);}
+@property --white75 {syntax:"<color>";inherits:false;initial-value:rgb(250 250 250 / 75%);}
+@property --white50 {syntax:"<color>";inherits:false;initial-value:rgb(250 250 250 / 50%);}
+@property --white25 {syntax:"<color>";inherits:false;initial-value:rgb(250 250 250 / 25%);}
+@property --white10 {syntax:"<color>";inherits:false;initial-value:rgb(250 250 250 / 10%);}
+
+/* GREYSCALE */
+@property --grey90 {syntax:"<color>";inherits:false;initial-value:rgb(25,25,25);}
+@property --grey80 {syntax:"<color>";inherits:false;initial-value:rgb(50,50,50);}
+@property --grey70 {syntax:"<color>";inherits:false;initial-value:rgb(75,75,75);}
+@property --grey60 {syntax:"<color>";inherits:false;initial-value:rgb(100,100,100);}
+@property --grey50 {syntax:"<color>";inherits:false;initial-value:rgb(125,125,125);}
+@property --grey40 {syntax:"<color>";inherits:false;initial-value:rgb(150,150,150);}
+@property --grey30 {syntax:"<color>";inherits:false;initial-value:rgb(175,175,175);}
+@property --grey20 {syntax:"<color>";inherits:false;initial-value:rgb(200,200,200);}
+@property --grey10 {syntax:"<color>";inherits:false;initial-value:rgb(225,225,225);}
+
+/* SHADES OF RED */
+@property --red50 {syntax:"<color>";inherits:false;initial-value:rgb(50,0,0);}
+@property --red100 {syntax:"<color>";inherits:false;initial-value:rgb(100,0,0);}
+@property --red150 {syntax:"<color>";inherits:false;initial-value:rgb(150,0,0);}
+@property --red200 {syntax:"<color>";inherits:false;initial-value:rgb(200,0,0);}
+@property --red250 {syntax:"<color>";inherits:false;initial-value:rgb(250,0,0);}
+
+/* SHADES OF GREEN */
+@property --green50 {syntax:"<color>";inherits:false;initial-value:rgb(0,50,0);}
+@property --green100 {syntax:"<color>";inherits:false;initial-value:rgb(0,100,0);}
+@property --green150 {syntax:"<color>";inherits:false;initial-value:rgb(0,150,0);}
+@property --green200 {syntax:"<color>";inherits:false;initial-value:rgb(0,200,0);}
+@property --green250 {syntax:"<color>";inherits:false;initial-value:rgb(0,250,0);}
+
+/* SHADES OF BLUE */
+@property --blue50 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,50);}
+@property --blue100 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,100);}
+@property --blue150 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,150);}
+@property --blue200 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,200);}
+@property --blue250 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,250);}
+
+/* SOFT COLOUR SCALE */
+@property --red-soft {syntax:"<color>";inherits:false;initial-value:rgb(245, 146, 135);}
+@property --orange-soft {syntax:"<color>";inherits:false;initial-value:rgb(242, 191, 133);}
+@property --yellow-soft {syntax:"<color>";inherits:false;initial-value:rgb(237, 215, 142);}
+@property --green-soft {syntax:"<color>";inherits:false;initial-value:rgb(168, 224, 169);}
+@property --blue-soft {syntax:"<color>";inherits:false;initial-value:rgb(145, 174, 227);}
+@property --purple-soft {syntax:"<color>";inherits:false;initial-value:rgb(202, 166, 227);}
+
+/* MEDIUM COLOUR SCALE */
+@property --red {syntax:"<color>";inherits:false;initial-value:rgb(235,78,61);}
+@property --orange {syntax:"<color>";inherits:false;initial-value:rgb(241,154,56);}
+@property --yellow {syntax:"<color>";inherits:false;initial-value:rgb(247,206,70);}
+@property --green {syntax:"<color>";inherits:false;initial-value:rgb(101,196,103);}
+@property --blue {syntax:"<color>";inherits:false;initial-value:rgb(50,120,247);}
+@property --purple {syntax:"<color>";inherits:false;initial-value:rgb(163,87,213);}
+
+/* BRIGHT COLOUR SCALE */
+@property --red-bright {syntax:"<color>";inherits:false;initial-value:rgb(255, 0, 0);}
+@property --orange-bright {syntax:"<color>";inherits:false;initial-value:rgb(255, 136, 0);}
+@property --yellow-bright {syntax:"<color>";inherits:false;initial-value:rgb(255, 240, 0);}
+@property --green-bright {syntax:"<color>";inherits:false;initial-value:rgb(0,255,0);}
+@property --blue-bright {syntax:"<color>";inherits:false;initial-value:rgb(0,0,255);}
+@property --purple-bright {syntax:"<color>";inherits:false;initial-value:rgb(162, 0, 255);}
+
+
+/*****************************************************************************/
+/*                                                                           */
+/*                                 GRADIENTS                                 */
+/*                                                                           */
+/*****************************************************************************/
+
+@property --temp { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgbs);}
+
+
+/* Overlays */
+@property --overlay-black { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(5 5 5 / 80%) 5%, rgb(5 5 5 / 10%) 95%); }
+@property --overlay-white { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(250 250 250 / 80%) 5%, rgb(250 250 250 / 10%) 95%); }
+
+
+/* Sky */
+@property --sky-full { syntax: "<image>"; inherits: false; initial-value: linear-gradient(180deg, rgb(255 255 255 / 100%), rgb(144 223 254 / 100%), rgb(31 92 149 / 100%), rgb(211 197 109 / 100%), rgb(169 65 14 / 100%), rgb(0 0 0 / 100%), rgb(8 7 13 / 100%), rgb(141 119 166 / 100%), rgb(251 139 151 / 100%), rgb(236 254 254 / 100%), rgb(255 255 255 / 100%)); }
+@property --sky-blues { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(2 0 36 / 100%) 0%, rgb(9 9 121 / 100%) 35%, rgb(0 212 255 / 100%) 100%); }
+@property --sunrise { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(191 61 33 / 100%), rgb(181 143 65 / 100%), rgb(124 175 239 / 100%), rgb(30 85 180 / 100%), rgb(11 43 63 / 100%)); }
+@property --sunset { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(252 172 121 / 100%),rgb(251 161 74 / 100%),rgb(230 113 142 / 100%),rgb(180 97 159 / 100%),rgb(84 55 157 / 100%)); }
+
+
+
+@property --fire { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(232 0 0 / 100%) 0%, rgb(255 103 15 / 100%) 37%, rgb(255 228 20 / 100%) 100%); }
+@property --instagram { syntax: "<image>"; inherits: false; initial-value: linear-gradient(135deg, rgb(131 58 180 / 100%), rgb(253 29 29 / 100%), rgb(252 176 69 / 100%)); }
+
+
+/* Sky */
+@property --purple-pink-orange { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(214, 122, 235 / 100%), rgb(250, 155, 188 / 100%), rgb(245 205 95 / 100%)) ); }
+@property --yellow-teals { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(221 232 174 / 100%), rgb(155 250 161 / 100%), rgb(95 242 245 / 100%)) ); }
+@property --purples { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(77 25 101 / 100%), rgb(121 38 160 / 100%), rgb(202 152 225 / 100%) ); }
+@property --teals { syntax: "<image>"; inherits: false; initial-value: linear-gradient(0deg, rgb(155 250 161 / 100%), rgb(95 242 245 / 100%)); }
+
+
+/* Radial Gradients */
+@property --test { syntax: "<image>"; inherits: false; initial-value: radial-gradient(ellipse at top, #e66465, transparent); }
+
+
+/*****************************************************************************/
+/*                                                                           */
+/*                               THEME COLOURS                               */
+/*                                                                           */
+/*****************************************************************************/
+
+/* Primary Colour:  */
+@property --primary {syntax:"<color>";inherits:false;initial-value:rgb(159 32 66 / 100%);}
+@property --primary-light {syntax:"<color>";inherits:false;initial-value:rgb(204 100 128 / 100%);}
+@property --primary-dark {syntax:"<color>";inherits:false;initial-value:rgb(123 13 30 / 100%);}
+
+/* Secondary Colour:  */
+@property --secondary {syntax:"<color>";inherits:false;initial-value:rgb(10 18 42 / 100%);}
+@property --secondary-light {syntax:"<color>";inherits:false;initial-value:rgb(79 96 146 / 100%);}
+@property --secondary-dark {syntax:"<color>";inherits:false;initial-value:rgb(0 8 31 / 100%);}
+
+/* Alternate Colour:  */
+@property --alt {syntax:"<color>";inherits:false;initial-value:rgb(255 165 171 / 100%);}
+@property --alt-light {syntax:"<color>";inherits:false;initial-value:rgb(255 220 222 / 100%);}
+@property --alt-dark {syntax:"<color>";inherits:false;initial-value:rgb(200 123 128 / 100%);}
+
+/* Background */
+@property --background {syntax:"<color>";inherits:false;initial-value:rgb(250 250 250 / 100%);}
+
+/* Text Colours */
+@property --text {syntax:"<color>";inherits:false;initial-value:rgb(5 5 5 / 100%);}
+@property --quote {syntax:"<color>";inherits:false;initial-value:rgb(100 100 100 / 100%);}
+@property --text-highlight {syntax:"<color>";inherits:false;initial-value:rgb(5 5 5 / 100%);}
+@property --link-important {syntax:"<color>";inherits:false;initial-value:rgb(5 5 5 / 100%);}
+
+/* Link Colours */
+@property --link {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --link-hover {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --link-active {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --link-visited {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --link-disabled {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+
+
+/***********************************************************************************************/
+/*                                                                                             */
+/*                                          FONTS                                              */
+/*                                                                                             */
+/***********************************************************************************************/
+
+/* LIBERATION MONO */
+@font-face { font-family: LibMono-Reg; src: local("Liberation Mono"), url("assets/fonts/LiberationMono-Regular.ttf"), format("truetype");}
+@font-face { font-family: LibMono-Bold; src: local("Liberation Mono Bold"), url("assets/fonts/LiberationMono-Bold.ttf"), format("truetype")}
+@font-face { font-family: LibMono-Italic; src: local("Liberation Mono Italic"), url("assets/fonts/LiberationMono-Italic.ttf"), format("truetype");}
+@font-face { font-family: LibMono-BoldItalic; src: local("Liberation Mono Bold Italic"), url("assets/fonts/LiberationMono-BoldItalic.ttf"), format("truetype");}
+
+/* GARAMOND */
+@font-face { font-family: Garamond-Reg; src: local("Garamond"), url("assets/fonts/Garamond.ttf"), format("truetype");}
+@font-face { font-family: Garamond-Bold; src: local("Garamond Bold"), url("assets/fonts/Garamond-Bold.ttf"), format("truetype");}
+@font-face { font-family: Garamond-Italic; src: local("Garamond Italic"), url("assets/fonts/Garamond-Italic.ttf"), format("truetype");}
+@font-face { font-family: Garamond-BoldItalic; src: local("Garamond Bold Italic"), url("assets/fonts/GaramondBoldItalic.ttf"), format("truetype");}
+
+/***********************************************************************************************/
+/*                                                                                             */
+/*                                       ANIMATIONS                                            */
+/*                                                                                             */
+/***********************************************************************************************/
+
+/* FADE IN/OUT */
+@keyframes fade {
+	from { opacity:0% }
+	to { opacity:100% }
+}
+
+img.fadein {
+    width: 450px;
+    height: auto;
+    animation-duration: 2s;
+    animation-name: fade;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+/* FLOATING/HOVERING */
+@keyframes floating {
+	from { box-shadow: 6px 6px 16px grey; }
+	to { box-shadow: 0px 0px 8px grey; }
+}
+
+img.floating {
+    width: 450px;
+    height: auto;
+    animation-duration: 2s;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
