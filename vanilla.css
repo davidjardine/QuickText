@@ -1,0 +1,649 @@
+/*****************************************************************************/
+/*                                                                           */
+/*                             QuickText VANILLA                             */
+/*                                                                           */
+/*               The default CSS styles for QuickText templates              */
+/*                                                                           */
+/*****************************************************************************/
+
+/* Eliminates browser-specific defaults that disrupt your layout */
+* { margin: 0; padding: 0; }
+
+html {
+	background: var(--background);
+}
+
+body {
+	background: var(--background);
+	color: var(--text);
+	font-family: serif;
+}
+
+/*****************************************************************************/
+/*                                                                           */
+/*                           SITE-WIDE FONT SIZES                            */
+/*                                                                           */
+/*      Maintaining all the font-sizes in one space makes cleaner code       */
+/*                                                                           */
+/*****************************************************************************/
+
+/********************************************************************
+DEFAULT SIZING (mobile-size screens)
+********************************************************************/
+
+/* Heading tags */
+h1 { font-size: 28pt; }
+h2 { font-size: 22pt; }
+h3 { font-size: 20pt; }
+h4 { font-size: 16pt; }
+h5 { font-size: 12pt; }
+h6 { font-size: 10pt; }
+
+/* Paragraph tags */
+p { font-size: 14pt; }
+p.xs { font-size: 10pt; }
+p.sm { font-size: 12pt; }
+p.lg { font-size: 16pt; }
+p.xl { font-size: 18pt; }
+
+a { font-size: 14pt; }
+
+/* List tags */
+ul, ol, dl { font-size: 14pt; }
+li, dt, dd { font-size: 14pt; }
+
+/* Other text tags */
+q, blockquote { font-size: 14pt; }
+time, address { font-size: 14pt; }
+
+/* Table text tags */
+th, td { font-size: 14pt; }
+
+
+/********************************************************************
+TABLET-SIZE SCREENS
+********************************************************************/
+@media only screen and (min-width: 768px) {
+    /* Heading tags */
+    h1 { font-size: 32pt; }
+    h2 { font-size: 24pt; }
+    h3 { font-size: 18pt; }
+    h4 { font-size: 16pt; }
+    h5 { font-size: 14pt; }
+    h6 { font-size: 12pt; }
+    
+    /* Paragraph tags */
+    p.xs { font-size: 11pt; }
+    p.sm { font-size: 13pt; }
+	p { font-size: 16pt; }
+    p.lg { font-size: 18pt; }
+    p.xl { font-size: 20pt; }
+    
+    a { font-size: 16pt; }
+
+	/* List tags */
+	ul, ol, dl { font-size: 16pt; }
+	li, dt, dd { font-size: 16pt; }
+
+	/* Other text tags */
+	q, blockquote { font-size: 16pt; }
+	time, address { font-size: 16pt; }
+
+	/* Table text tags */
+	th, td { font-size: 16pt; }
+}
+
+
+/********************************************************************
+DESKTOP-SIZE SCREENS
+********************************************************************/
+@media only screen and (min-width: 992px) {
+    /* Heading tags */
+    h1 { font-size: 32pt; }
+    h2 { font-size: 24pt; }
+    h3 { font-size: 20pt; }
+    h4 { font-size: 18pt; }
+    h5 { font-size: 16pt; }
+    h6 { font-size: 14pt; }
+    
+    /* Paragraph tags */
+    p.xs { font-size: 11pt; }
+    p.sm { font-size: 13pt; }
+	p { font-size: 16pt; }
+    p.lg { font-size: 18pt; }
+    p.xl { font-size: 20pt; }
+    
+    a { font-size: 16pt; }
+
+	/* List tags */
+	ul, ol, dl { font-size: 16pt; }
+	li, dt { font-size: 16pt; }
+	dd { font-size: 14pt; }
+
+	/* Other text tags */
+	q, blockquote { font-size: 16pt; }
+	time, address { font-size: 16pt; }
+
+	/* Table text tags */
+	th, td { font-size: 16pt; }
+}
+
+
+/********************************************************************
+TOP LEVEL CONTAINERS
+********************************************************************/
+
+header {
+	padding: 100px 6% 50px 6%;
+}
+
+main {
+	padding: 0px 12%;
+	background: var(--background);
+}
+
+footer {
+	padding: 10px 6%;
+	margin: 50px 0px 0px 0px;
+	background: var(--grey70);
+	color: var(--white);
+	p,a,ul { font-size: 12pt; }
+	a { color: var(--white); }
+}
+
+
+/*****************************************************************************/
+/*                                                                           */
+/*                           SECTIONING TAGS                                 */
+/*                                                                           */
+/*       (nav, section, article, aside, details, dialog, div, span)          */
+/*                                                                           */
+/*****************************************************************************/
+
+/********************************************************************
+NAVIGATION MENUS
+********************************************************************/
+
+nav {
+	position: fixed;
+	top: 0; right: 0; left: 0;
+	background: var(--black);
+	color: var(--white);
+	padding: 10px;
+	ul {
+		display: flex;
+		list-style: none;
+		li { 
+			padding: 5px 20px;
+			a { 
+				color: var(--white);
+				text-decoration: none;
+			}
+			a:hover {
+				font-weight: 900;
+			}
+		}
+	}
+}
+
+
+/********************************************************************
+CONTENT SECTIONS
+********************************************************************/
+
+article { }
+
+aside {
+	float: right; margin: 15px;
+	background: var(--black);
+	color: var(--white);
+	padding: 15px;
+	max-width: 25vw; /* sets maximum width to 25% of the screen width */
+}
+
+details {
+	margin: 10px 0px 25px 0px;
+	outline: 1px solid var(--black);
+    summary {
+    	padding: 10px;
+    	font-size: 12pt;
+    	font-family: monospace;
+    	background: var(--black);
+    	color: var(--white);
+    }
+    p { padding: 15px; }
+}
+
+section {  }
+
+
+/********************************************************************
+DIALOGS AND POP-UPS
+********************************************************************/
+
+dialog {  }
+
+
+/********************************************************************
+NON-SEMANTIC SECTIONS
+********************************************************************/
+
+div {}
+
+span {}
+
+
+/*****************************************************************************/
+/*                                                                           */
+/*                           TEXT CONTENT TAGS                               */
+/*                                                                           */
+/*          (headings, paragraphs, links, quotes, formatted, raw)            */
+/*                                                                           */
+/*****************************************************************************/
+
+/********************************************************************
+HEADINGS and PARAGRAPHS
+********************************************************************/
+
+
+hgroup {
+	padding: 15px 0px;
+	h1,h2,h3,h4,h5,h6 { padding: 5px 0px; }
+}
+
+h1,h2,h3,h4,h5,h6 { padding: 10px 0px; }
+p { padding: 10px 0px; }
+
+
+
+
+/********************************************************************
+HYPERLINKS
+********************************************************************/
+
+a {  }
+a:hover { text-decoration: none; }
+
+
+/********************************************************************
+QUOTATIONS
+********************************************************************/
+
+q {
+	color: var(--quote);
+	font-style: italic;
+}
+
+blockquote {
+	margin: 20px; 
+	padding: 0px 0px 0px 25px;
+	border-left: 5px solid var(--grey30);
+	color: var(--quote);
+	font-style: italic;
+}
+
+cite {
+	font-size: 0.6em;
+	position: relative;
+	bottom: 5pt;
+	padding: 2px;
+}
+
+
+/********************************************************************
+FORMATTED TEXT
+********************************************************************/
+
+address {
+	display: inline;
+	font-style: normal;
+}
+
+time {
+	display: inline;
+	font-family: monospace;
+	font-weight: 900;
+}
+
+abbr {}
+
+dfn {}
+
+mark {
+	padding: 2px;
+}
+
+sub {}
+
+sup {}
+
+s {}
+
+ins {
+    font-weight: 700;
+    color: var(--green);
+}
+
+del {
+	font-weight: 700;
+    color: var(--red);
+}
+
+
+/********************************************************************
+RAW TEXT
+********************************************************************/
+
+pre, code, samp, data { font-size: 14pt; }
+
+pre {
+	padding: 15px;
+	box-shadow: inset 0px 0px 10px var(--grey50);
+}
+
+code {
+	background: var(--grey10);
+	padding: 2px 10px;
+	border-radius: 2px;
+}
+
+samp {}
+
+data {}
+
+/*****************************************************************************/
+/*                                                                           */
+/*                               LAYOUT TAGS                                 */
+/*                                                                           */
+/*                     (horizontal lines, lists, tables)                     */
+/*                                                                           */
+/*****************************************************************************/
+
+/********************************************************************
+HORIZONTAL LINES
+********************************************************************/
+hr {  }
+
+hr.dashed {
+	margin: 20px 0px;
+	border-top: 2px dashed var(--grey60);
+	border-left: none; border-right: none; border-bottom: none;
+}
+
+hr.groove {
+	margin: 25px 0px;
+	border-top: 10px groove var(--secondary);
+	border-left: none; border-right: none; border-bottom: none;
+}
+
+hr.ridge {
+	margin: 25px 0px;
+	border-top: 10px groove var(--secondary);
+	border-left: none; border-right: none; border-bottom: none;
+}
+
+hr.null10 { border:none; margin:10px 0px }
+hr.null25 { border:none; margin:25px 0px }
+hr.null50 { border:none; margin:50px 0px }
+hr.null100 { border:none; margin:100px 0px }
+
+
+/********************************************************************
+LISTS
+********************************************************************/
+
+/* All Lists */
+ul, ol, dl { margin: 10px }
+
+ul, ol {
+	h2, h3, h4, h5, h6 { }
+}
+
+ul, ol {
+	padding: 0px 25px;
+	li { padding: 5px; }
+}
+
+ul > ul {
+	margin: 0px 0px 0px 20px;
+	padding: 0;
+}
+
+ol > ol {
+	margin: 0px 0px 0px 20px;
+	padding: 0;
+}
+
+li {  }
+
+dl {
+	padding: 15px;
+	display: inline-block;
+	outline: 1px solid var(--black);
+    font-family: LibMono-Reg;
+}
+
+dl {
+	ol { margin: 0; padding: 0; list-style-position: inside; }
+}
+
+dt {
+    padding: 10px;
+    font-family: LibMono-Bold;
+}
+
+dd {
+	padding: 0px 0px 20px 25px;
+    color: var(--grey60);
+}
+
+
+/********************************************************************
+TABLES
+********************************************************************/
+
+table {
+	border: 1px solid var(--grey80);
+	border-collapse: collapse;
+	margin: 20px;
+}
+caption {
+	font-style: italic;
+	font-weight: 900;
+	font-size: 1.5em;
+	padding: 10px;
+}
+
+tr {}
+
+th { 
+	padding: 5px 25px;
+	font-weight: 900;
+	background: var(--grey20);
+	border: 1px solid var(--grey80);
+}
+
+td {
+	padding: 5px;
+	border: 1px solid var(--grey80);
+}
+
+thead {}
+
+tbody {}
+
+tfoot { 
+	th, td { 
+		font-size: 10pt;
+		font-style: italic;
+	}
+}
+
+col {  }
+
+colgroup {  }
+
+
+/*****************************************************************************/
+/*                                                                           */
+/*                                FORM ELEMENTS                              */
+/*                                                                           */
+/*                                                                           */
+/*****************************************************************************/
+
+form {
+	outline: 1px solid var(--black);
+	margin: 25px;
+	padding: 25px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+/********************************************************************
+FIELDS
+********************************************************************/
+
+input, select {
+	padding: 5px;
+}
+
+input {
+	font-size: 20pt;
+}
+
+input[type="submit"] {
+	margin: 25px 20px 10px 20px;
+	background: var(--grey70);
+	color: var(--white);
+	font-family: monospace;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background: var(--grey20);
+	color: var(--black);
+}
+
+select {
+	font-size: 16pt;
+}
+
+selectedcontent {  }
+
+option { font-size: 16pt; }
+
+textarea {  }
+
+
+/********************************************************************
+INFORMATION
+********************************************************************/
+
+label { 
+	padding: 25px 0px 5px 0px;
+	font-size: 16pt;
+}
+
+legend {
+	font-family: monospace;
+	font-size: 14pt;
+}
+
+progress {  }
+
+fieldset {
+	margin: 25px 5px 10px 5px;
+	padding: 10px;
+	display: flex;
+	border: 1px solid var(--black);
+	legend { 
+		padding: 5px;
+		background: var(--black);
+		color: var(--white);
+	}
+	div { padding: 5px 25px; }
+}
+
+optgroup {  }
+
+datalist {  }
+
+meter {  }
+
+output {  }
+
+
+/********************************************************************
+BUTTONS
+********************************************************************/
+
+button {  }
+button:hover {  }
+
+
+/*****************************************************************************/
+/*                                                                           */
+/*                                 MULTIMEDIA                                */
+/*                                                                           */
+/*                                                                           */
+/*****************************************************************************/
+
+img {  }
+
+area {  }
+
+map {  }
+
+audio {  }	
+
+track {  }	
+
+video {  }	
+
+svg {  }
+
+figure { }
+
+figcaption { }
+
+picture {  }
+
+source {  }
+
+/*****************************************************************************/
+/*                                                                           */
+/*                                MISCELLANEOUS                              */
+/*                                                                           */
+/*                                                                           */
+/*****************************************************************************/
+
+/* Math Tags */
+math { }
+var { }
+data { }
+
+/* Embedded Content Tags */
+embed {  }
+fencedframe {  }
+iframe {  }
+object {  }
+
+/* Ruby Tags */
+ruby {  }
+rp {  }
+rt {  }
+
+/* Browser Info */
+wbr {  }
+kbd {  }
+bdi {  }
+bdo {  }
+
+/* Scripts */
+canvas {}
+script {}
+noscript {}
+
+/* Other */
+slot {}
+template {}
